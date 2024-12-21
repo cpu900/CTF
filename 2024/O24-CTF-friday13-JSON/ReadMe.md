@@ -141,12 +141,23 @@ strings flag | grep "O24"
 **Time:** December 13th, 7:52:20 PM
 
 **Description:**  
-Run Hashcat with mode 4300 against the rockyou password file ([rockyou.txt](https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt)) to crack the hash and get the flag.
+First, run [Hashcat](https://hashcat.net/hashcat/) against the hash to get all hash-modes matching the hash.
+
+Then, run Hashcat with each matching mode using the [rockyou.txt](https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt) password file to crack the hash and get the flag.
 
 **Command:**
+
+To get hash modes for the given hash:
 ```
-hashcat -m 4300 605428f352781542abeafe5c1832d4aa -a 0 rockyou.txt --show
+hashcat 605428f352781542abeafe5c1832d4aa
 ```
+
+To crack the hash using mode 4300 and the rockyou password file:
+```
+hashcat -m 4300 605428f352781542abeafe5c1832d4aa -a 0 rockyou.txt
+```
+
+
 
 ---
 
