@@ -1,4 +1,4 @@
-# CTF - friday13(){return json} - ctf.appsec.nu 
+# CTF - 🔪 friday13(){return json} - ctf.appsec.nu 
 
 ## Web
 - [The Chimney Bypass](#the-chimney-bypass)
@@ -205,7 +205,6 @@ ls -la restricted-section/
 echo $(<restricted-section/flag.txt)
 ```
 
-
 ![Bashir the Basher](./images/Bashir-the-Basher-1.png)
 
 ---
@@ -218,3 +217,32 @@ echo $(<restricted-section/flag.txt)
 **Description:**  
 The flag is a ROT24 of the text `iwillfollowtherules`.
 Use a site like [ROT Cipher Decoder](https://www.dcode.fr/rot-cipher#f0) to convert it into the flag.
+
+---
+
+# Pandemic Paranoia  
+**Category:** Misc  
+**Value:** 100  
+**Time:** December 16th, 4:26:33 PM  
+
+[Click here to read the full walkthrough.](PandemicParanoia.md)  
+
+---
+
+### Tools used for solving the CTF (free to download and use)
+
+- [Burp Suite](https://portswigger.net/) - Used for intercepting and analyzing HTTP traffic.  
+- [Hashcat](https://hashcat.net/hashcat/) - Used for cracking hashes.  
+- [PyCharm](https://www.jetbrains.com/pycharm/) - Favorite IDE to use for Python development.  
+- [CyberChef](https://gchq.github.io/CyberChef/) - Used for converting between formats, encrypting/decrypting, and more.  
+- [Autopsy](https://www.autopsy.com/) - Used for recovering data from deleted files.  
+- [CrackStation](https://crackstation.net/) - Used for checking hashes against rainbow tables.  
+- [SecLists](https://github.com/danielmiessler/SecLists) - Lots of good password lists to use [from here](https://github.com/danielmiessler/SecLists/tree/master/Passwords).  
+- [Claude](https://Claude.ai) - Used for AI-generated code and assistance.  
+- [HackTricks](https://book.hacktricks.xyz/pentesting-web/web-vulnerabilities-methodology) - Techniques for hacking CTF challenges.  
+
+
+
+
+
+
