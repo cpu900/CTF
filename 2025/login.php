@@ -8,6 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $hashedUsername = md5($username);
     $hashedPassword = md5($password);
 
+    $validUserHash = '456f5ab514996123d37d06d2e85d30e9'; // md5 hash of a valid username
+    
     $isValidUser = ($hashedUsername === $validUserHash);
 
     if ($isValidUser) {
